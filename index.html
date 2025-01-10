@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantaVolley - Gestione Punteggi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FantaVolley</h1>
+        <h2>Gestione Punteggi</h2>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h3>Inserisci Punteggio</h3>
+            <form id="punteggio-form">
+                <label for="squadra1">Squadra 1:</label>
+                <input type="text" id="squadra1" name="squadra1" required>
+
+                <label for="punteggio1">Punteggio Squadra 1:</label>
+                <input type="number" id="punteggio1" name="punteggio1" required>
+
+                <label for="squadra2">Squadra 2:</label>
+                <input type="text" id="squadra2" name="squadra2" required>
+
+                <label for="punteggio2">Punteggio Squadra 2:</label>
+                <input type="number" id="punteggio2" name="punteggio2" required>
+
+                <button type="submit">Salva</button>
+            </form>
+        </section>
+
+        <section id="punteggi-section">
+            <h3>Punteggi Salvati</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Squadra 1</th>
+                        <th>Punteggio 1</th>
+                        <th>Squadra 2</th>
+                        <th>Punteggio 2</th>
+                        <th>Data</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody id="punteggi-list">
+                    <!-- Righe generate dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
